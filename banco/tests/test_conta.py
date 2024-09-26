@@ -8,6 +8,7 @@ def conta_valida():
     conta1 = Conta(222,333)
     return conta1
 
+
 def test_numero_conta_valida(conta_valida):
     assert conta_valida._numero_conta == 222
 
@@ -19,7 +20,9 @@ def test_depositar_valor_positivo(conta_valida):
     assert conta_valida._saldo == 100
 
 def test_saldo_inicial_zero(conta_valida):
-    assert conta_valida._saldo == 0  
+    assert conta_valida._saldo == 0 
 
-def depositar_valor_negativo_saldo_zero(conta_valida):
-    assert conta_valida._saldo == -3      
+def test_numero_conta_valida2(conta_valida):
+    assert conta_valida._numero_conta == 000
+    
+ 
