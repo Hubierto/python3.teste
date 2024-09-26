@@ -22,7 +22,6 @@ def test_depositar_valor_positivo(conta_valida):
 def test_saldo_inicial_zero(conta_valida):
     assert conta_valida._saldo == 0 
 
-def test_numero_conta_valida2(conta_valida):
-    assert conta_valida._numero_conta == 000
+
     
  
